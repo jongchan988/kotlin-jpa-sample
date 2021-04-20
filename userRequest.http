@@ -1,0 +1,29 @@
+# 유저 리스트 (UserController : getUsers fun)
+GET http://localhost:8080/user
+###
+
+# 유저 저장 (UserController : seveUser fun)
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "name": "홍종민트",
+  "age": 35,
+  "address":"고양"
+}
+###
+
+# 유저 업데이트 (UserController : updateUser fun)
+PUT http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "seq": 1,
+  "age": 1002,
+  "name": "홍종찬",
+  "address": "부천"
+}
+###
+
+# 유저 삭제 (UserController : deleteUser fun)
+DELETE http://localhost:8080/user/1
